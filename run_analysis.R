@@ -1,16 +1,16 @@
 library(tidyverse)
 # setting the working directory for importing files
-setwd("~/Documents/Coding/R/Johns Hopkins Coursera/C3 - Getting and Cleaning Data/Final Project/Getting and Cleaning Data - Course Project/Data")
+setwd("~/Documents/Coding/R/Johns Hopkins Coursera/C3 - Getting and Cleaning Data/Final Project/Getting and Cleaning Data - Final Project")
 
 
 # importing relevant data
-testlabels <- read.delim("y_test.txt", header = FALSE)
-testdata <- read.delim("X_test.txt", header = FALSE, stringsAsFactors = FALSE)
-trainlabels <- read.delim("y_train.txt", header = FALSE)
-traindata <- read.delim("X_train.txt", header = FALSE, stringsAsFactors = FALSE)
-subject_test <- read.delim("subject_test.txt", header = FALSE)
-subject_train <- read.delim("subject_train.txt", header = FALSE)
-features <- read.delim("features.txt", stringsAsFactors = FALSE, header = FALSE)
+testlabels <- read.delim("UCI HAR Dataset/test/y_test.txt", header = FALSE)
+testdata <- read.delim("UCI HAR Dataset/test/X_test.txt", header = FALSE, stringsAsFactors = FALSE)
+trainlabels <- read.delim("UCI HAR Dataset/train/y_train.txt", header = FALSE)
+traindata <- read.delim("UCI HAR Dataset/train/X_train.txt", header = FALSE, stringsAsFactors = FALSE)
+subject_test <- read.delim("UCI HAR Dataset/test/subject_test.txt", header = FALSE)
+subject_train <- read.delim("UCI HAR Dataset/train/subject_train.txt", header = FALSE)
+features <- read.delim("UCI HAR Dataset/features.txt", stringsAsFactors = FALSE, header = FALSE)
 
 
 # merging the test and training data
